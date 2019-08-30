@@ -28,7 +28,8 @@ var illidan = {
 //ACTIVIDAD
 //Cargar un objeto en la funcion y tomar su nombre y edad, fomar un mensaje
 function describirPersona1(objeto){
-  console.log(`Hola, me llamo ${objeto.nombre} y tengo ${objeto.edad} años.`);
+  console.log(`Hola, me llamo ${objeto.nombre} y tengo ${objeto.edad} años.`); /* Esto de aqui se llama template strings
+  Y es la mejor manera de trabajar strings ya que permite integrar variables a cadenas de texto muy facilmente */
 }
 
 describirPersona1(illidan);

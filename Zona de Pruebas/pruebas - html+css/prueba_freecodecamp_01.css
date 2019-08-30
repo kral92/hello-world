@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(to bottom left, lightgray, white);
+  text-align: center;
+  padding: 10px;
+}
+header {
+  background-color: white;
+}
+#main {
+  background-image: linear-gradient(to bottom right, white, lightgray);
+  padding: 10px;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+#image-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+ul {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}

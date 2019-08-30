@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de Inscripción</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Formulario de Inscripción</h1>
+      <p id="description">Rellene el formulario con los siguientes datos:</p>
+    </header>
+
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Nombre:</label><br>
+        <input id="name" type="text" placeholder="Escriba su Nombre" required><br>
+        <br>
+        <label for="email" id="email-label">Correo Electrónico:</label><br>
+        <input id="email" type="email" placeholder="Escriba su Correo" required><br>
+        <br>
+        <label for="number" id="number-label">Años de Experiencia Laboral:</label><br>
+        <input id="number" type="number" placeholder="Años" min="1" max="25"><br>
+        <br>
+        <label for="dropdown" id="select-label">Especialidad:</label><br>
+        <select id="dropdown">
+          <option value="1" disabled selected>Marque su Especialidad</option>
+          <option value="2">Diseñador de Escenarios</option>
+          <option value="3">Diseñador de Personajes</option>
+          <option value="4">Diseñador de Acción</option>
+        </select><br>
+        <br>
+        <fieldset>
+          <legend>Elementos que considera de dificultad a la hora de trabajar:</legend>
+          <input type="checkbox" name="dificultad" value="dificultad1"> Perspectivas<br>
+          <input type="checkbox" name="dificultad" value="dificultad2"> Uso de sombras<br>
+          <input type="checkbox" name="dificultad" value="dificultad3"> Coloreado de escenarios<br>
+          <input type="checkbox" name="dificultad" value="dificultad4"> Coloreado de personajes<br>
+          <input type="checkbox" name="dificultad" value="dificultad5"> Anatomia de personajes<br>
+          <input type="checkbox" name="dificultad" value="dificultad6"> Coloreado de escenarios<br>
+          <input type="checkbox" name="dificultad" value="dificultad7"> Composiciones<br>
+          <input type="checkbox" name="dificultad" value="dificultad8"> Primerisima primera persona<br>
+          <input type="checkbox" name="dificultad" value="dificultad9"> Dialogos<br>
+          <input type="checkbox" name="dificultad" value="dificultad10"> Movimiento<br>
+          <input type="checkbox" name="dificultad" value="dificultad11"> Tramas y relleno
+        </fieldset><br>
+        <br>
+        <fieldset>
+          <legend>Marque el medio de trabajo:</legend>
+          <input type="radio" name="medio" value="medio1"> Tableta Electrónica<br>
+          <input type="radio" name="medio" value="medio2"> Tradicional (Lapiz)<br>
+          <input type="radio" name="medio" value="medio3"> Tinta
+        </fieldset><br>
+        <br>
+        <label for="textarea" id="textarea-label">Comentarios Adicionales:</label><br>
+        <textarea id="textarea" name="comentarios" rows="8" cols="120"></textarea><br>
+        <br>
+        <button id="submit" type="submit" value="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
