@@ -1,4 +1,13 @@
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 ul.nav-ul-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -29,6 +38,10 @@ li.nav-li-bar a:hover:not(.active) {
 
 .active {
   background-color: #538cc6;
+}
+
+#inicio {
+  padding-top: 30px;
 }
 
 #email {
@@ -76,9 +89,23 @@ li.nav-li-bar a:hover:not(.active) {
   background-color: #e68a00;
 }
 
+#imagen_dia {
+  width: 350px;
+  height: 350px;
+}
+
 @media (max-width: 650px) {
   [class*="col-"] {
     width: 100%;
+  }
+
+  #imagen_dia {
+    width: 238px;
+    height: 200px;
+  }
+
+  #header, ul.nav-ul-bar {
+    position: static;
   }
 }
 
@@ -89,13 +116,14 @@ li.nav-li-bar a:hover:not(.active) {
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #538cc6;
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  margin: 20px;
-  padding: 30px;
-  font-size: 30px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
 }
